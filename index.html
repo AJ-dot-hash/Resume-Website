@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aarya Jagdale - Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f5f9;
+            color: #2e2e2e;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue for mystery + curiosity */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 12px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p.description {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #6a11cb;
+            border-bottom: 2px solid #ffb700;
+            padding-bottom: 5px;
+        }
+
+        section {
+            background-color: white;
+            border: 1px solid #d3eafd;
+            border-left: 8px solid #ffb700; /* Amber highlight for energy */
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+        }
+
+        a {
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            background-color: #fbfcff;
+        }
+
+        th {
+            background-color: #e3f2fd;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px dashed #9be7ff; /* mint for freshness */
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #43cea2; /* teal for openness */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #185a9d;
+        }
+
+        @media (min-width: 768px) {
+            .flex-container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .flex-item {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Aarya Jagdale">
+        <h1>Aarya Jagdale</h1>
+        <p>Student</p>
+        <p class="description">A student who loves learning 
+            <br>
+            Ready to explore, adapt, and grow in the world.
+        </p>
+    </header>
+
+    <div class="flex-container">
+        <section class="flex-item">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> +91 98257 75952</p>
+            <p><strong>Email:</strong> <a href="mailto:aarya.j@ahduni.edu.in">aarya.j@ahduni.edu.in</a></p>
+            <p><strong>Address:</strong> C-601 Gala Aria, South Bopal, Ahmedabad, Gujarat - 380058</p>
+        </section>
+
+        <section class="flex-item">
+            <h2>Skills</h2>
+            <ul>
+                <li>Content Writing</li>
+                <li>Public Speaking</li>
+                <li>Organising</li>
+            </ul>
+        </section>
+    </div>
+
+    <section>
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Grade</th>
+                <th>School</th>
+                <th>Board</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Eklavya School, Ahmedabad</td>
+                <td>ICSE</td>
+                <td>72%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>The New Tulip International School, Ahmedabad</td>
+                <td>CBSE</td>
+                <td>83%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name: <input type="text" name="name"></label>
+            <label>Email: <input type="email" name="email"></label>
+            <label>Message: <textarea name="message" rows="4"></textarea></label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
